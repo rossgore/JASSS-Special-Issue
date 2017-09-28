@@ -9,7 +9,7 @@ public class Simulation {
 	private static double religiousInstitution;
 	private static SocialNetwork socialNetwork; 
 
-	public static double RELIGIOUS_PRACTICE_THRESHOLD;
+	public static double EXISTENTIAL_SECURITY;
 	public static double DOUGLAS_COBB_BETA;
 	public static double EDUCATION_HOMOPHILY;
 	
@@ -24,7 +24,7 @@ public class Simulation {
 		String [] simArgs = new String[7];
 		String startYear = "1998";
 		String endYear   = "2008";
-		String numberOfAgents = "350";
+		String numberOfAgents = "5000";
 		List<String> countries = SimToolkit.getEvalCountries(false);
 		for (int l=0; l<countries.size(); l++)
 		{
@@ -407,11 +407,11 @@ public class Simulation {
 	}
 
 	public static double getRELIGIOUS_PRACTICE_THRESHOLD() {
-		return RELIGIOUS_PRACTICE_THRESHOLD;
+		return EXISTENTIAL_SECURITY;
 	}
 
 	public static void setRELIGIOUS_PRACTICE_THRESHOLD(double pRELIGIOUS_PRACTICE_THRESHOLD) {
-		RELIGIOUS_PRACTICE_THRESHOLD = pRELIGIOUS_PRACTICE_THRESHOLD;
+		EXISTENTIAL_SECURITY = pRELIGIOUS_PRACTICE_THRESHOLD;
 	}
 
 	public static SocialNetwork getSocialNetwork() {
